@@ -48,4 +48,3 @@ class DriverDetailView(generic.DetailView):
         return Driver.objects.prefetch_related(
             "cars__manufacturer"
         )
-
